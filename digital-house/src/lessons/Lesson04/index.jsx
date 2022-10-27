@@ -2,7 +2,7 @@ import './style.scss'
 import youtubeImage from './../../assets/images/youtube-home.png'
 import batataGif from './../../assets/images/batata.gif'
 
-export function QuartaAula() {
+export function Lesson04() {
 
   const componentsFound = [
     {

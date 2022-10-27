@@ -1,7 +1,7 @@
 import './style.scss'
 import batataGif from '../../assets/images/batata.gif'
 
-export function TerceiraAula() {
+export function Lesson03() {
 
   const components = [
     {name: 'Component Card 1', description: 'Teste 1', image: 'http://pa1.narvii.com/6203/b19ab0278cb42d6c11e6ac6c3c4f2824dc593def_00.gif'},

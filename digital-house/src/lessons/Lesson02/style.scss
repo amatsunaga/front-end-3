@@ -1,0 +1,64 @@
+.segunda-aula-main {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-title {
+    margin-bottom: 30px;
+    color: blueviolet;
+  }
+  
+  .secondary-title {
+    margin-bottom: 20px;
+    color:rgb(41, 240, 41);
+  }
+  
+  li {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header {
+    display: flex;
+  
+    ul {
+      display: flex;
+    }
+  }
+  
+  .card-container {
+    width: max-content;
+    margin: 0 0 20px 10px;
+  
+    .channel-thumbnail {
+      width: 275px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 1px 5px 5px #161616;
+    
+      img {
+        max-height: 50px;
+        padding: 10px;
+      }
+    
+      iframe {
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+      }
+    }
+  
+    .card-text {
+      padding: 0 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 5px;
+      color: white;
+    }
+  }
+
+}

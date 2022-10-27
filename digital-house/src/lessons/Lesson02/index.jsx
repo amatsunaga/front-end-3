@@ -1,10 +1,9 @@
-import styles from './style.module.scss'
-import Iframe from 'react-iframe'
+import './style.scss'
 import globoLogo from '../../assets/images/globo.webp'
 import multishowLogo from '../../assets/images/multishow.webp'
 import globonewsLogo from '../../assets/images/globonews.webp'
 
-export function SegundaAula() {
+export function Lesson02() {
 
   const cards = [
     {channel: globoLogo, video: 'https://www.youtube.com/embed/bpOSxM0rNPM', time: '22:40 - 23:34', title: 'Ilha de Ferro', description: 'Ilha de Ferro'},
@@ -13,24 +12,21 @@ export function SegundaAula() {
   ]
 
   return(
-    <main className={ styles["segunda-aula-main"] }>
-      <h1>Segunda Aula</h1>
-      <h2>Site escolhido: Globoplay</h2>
+    <main className="segunda-aula-main">
+      <h1 className="main-title">Segunda Aula</h1>
+      <h2 className="secondary-title">Site escolhido: Globoplay</h2>
       <ul>
-        <h2>Primeiro Componente - Card</h2>
+        <h2 className="secondary-title">Primeiro Componente - Card</h2>
         <li>
           {
             cards.map(card => (
-              <div className={ styles["card-container"] }>
+              <div className="card-container">
                 <a href={ card.video }>
-                  <div className={ styles["channel-thumbnail"] }>
+                  <div className="channel-thumbnail">
                     <img src={ card.channel} alt="Canal" />
-                    {/* <video width="275">
-                      <source>{ card.video }</source>
-                    </video> */}
-                    <iframe width="275" src={ card.video } allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="275" src={ card.video } allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" scrolling="no" allowfullscreen></iframe>
                   </div>
-                  <div className={ styles["card-text"]} >
+                  <div className="card-text" >
                     <p>{ card.time }</p>
                     <h3>{ card.title }</h3>
                     <p>{ card.description }</p>
@@ -41,24 +37,6 @@ export function SegundaAula() {
           }
         </li>
 
-        <h2>Primeiro Componente - Header</h2>
-        <li>
-          <header>
-            <img src="" alt="Logo" />
-            <ul>
-              <li>Agora na TV</li>
-              <li>Novelas</li>
-              <li>Séries</li>
-              <li>Filmes</li>
-              <li>Originais</li>
-              <li>Explore</li>
-            </ul>
-          </header>
-        </li>
-
-        <li>
-
-        </li>
       </ul>
     </main>
   )
