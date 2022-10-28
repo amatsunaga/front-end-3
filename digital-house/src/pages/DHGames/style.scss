@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.dh-games {
+  width: 100vw;
+  padding: 84px 291px;
+  background: #101010;
+
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  section {
+    margin-bottom: 82px;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    font-size: 2.25rem;
+    color: #ffffffcc;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

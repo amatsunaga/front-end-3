@@ -1,3 +1,5 @@
+import "./style.scss"
+
 import { DHGame_wideCard } from "../../components/DHGame_wideCard"
 import { DHGame_squareCard } from "../../components/DHGame_squareCard"
 
@@ -114,7 +116,7 @@ const cheapGames = [
 ]
 
   return (
-    <main>
+    <main className="dh-games">
         <section className="new-games">
             <h2 className="section-title">New Games</h2>
 
