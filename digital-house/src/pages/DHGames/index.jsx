@@ -120,7 +120,7 @@ const cheapGames = [
         <section className="new-games">
             <h2 className="section-title">New Games</h2>
 
-            <ul className="new-Games-list">
+            <ul className="wide-cards-list new-Games-list">
 
                 {
                     newGames.map((game, index) =>
@@ -137,7 +137,7 @@ const cheapGames = [
 
         <section className="halloween-games">
             <h2 className="section-title">Halloween Games</h2>
-            <ul lassName="halloween-games-list">
+            <ul lassName="square-cards-list halloween-games-list">
 
                 {
                     halloweenGames.map((game, index) =>
@@ -154,7 +154,7 @@ const cheapGames = [
         <section className="early-access-games">
             <h2 className="section-title">Early Acess Games</h2>
 
-            <ul className="early-access-games-list">
+            <ul className="wide-cards-list early-access-games-list">
 
                 {
                     earlyAccessGames.map((game, index) =>
@@ -171,7 +171,7 @@ const cheapGames = [
 
         <section className="cheap-games">
             <h2 className="section-title">Cheap Games</h2>
-            <ul className="cheap-games-list">
+            <ul className="square-cards-list cheap-games-list">
 
                 {
                     cheapGames.map((game, index) =>

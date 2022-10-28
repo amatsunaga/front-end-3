@@ -19,10 +19,18 @@
     color: #ffffffcc;
   }
 
-  ul {
+  .wide-cards-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
+
+  // .square-cards-list {
+  //   display: grid;
+  //   grid-template-areas:
+  //     'card1' 'card2'
+  //     'card3' 'card4'
+  //   ;
+  // }
 }
