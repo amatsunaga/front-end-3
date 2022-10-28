@@ -1,5 +1,5 @@
-import { DHGame_newGame } from "../../components/DHGame_wideCard"
-import { DHGame_offer } from "../../components/DHGame_squareCard"
+import { DHGame_wideCard } from "../../components/DHGame_wideCard"
+import { DHGame_squareCard } from "../../components/DHGame_squareCard"
 
 export function DHGames() {
 
@@ -122,7 +122,7 @@ const cheapGames = [
 
                 {
                     newGames.map((game, index) =>
-                        <DHGame_newGame
+                        <DHGame_wideCard
                             key={ index }
                             item= { game }
                         />
@@ -139,7 +139,7 @@ const cheapGames = [
 
                 {
                     halloweenGames.map((game, index) =>
-                        <DHGame_offer
+                        <DHGame_squareCard
                             key={ index }
                             item= { game }
                         />
@@ -156,7 +156,7 @@ const cheapGames = [
 
                 {
                     earlyAccessGames.map((game, index) =>
-                        <DHGame_newGame
+                        <DHGame_wideCard
                             key={ index }
                             item= { game }
                         />
@@ -173,7 +173,7 @@ const cheapGames = [
 
                 {
                     cheapGames.map((game, index) =>
-                        <DHGame_offer
+                        <DHGame_squareCard
                             key={ index }
                             item= { game }
                         />
