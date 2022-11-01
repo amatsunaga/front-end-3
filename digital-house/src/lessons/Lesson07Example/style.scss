@@ -1,0 +1,27 @@
+.dark-theme {
+
+    background-color: red;
+  
+}
+
+.setima-aula-exemplo-component {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+
+    &>h1 {
+
+        margin-bottom: 32px;
+
+    }
+
+    &>button {
+
+        color: black;
+        padding: 4px;
+        margin-right: 12px;
+
+    }
+}
+
