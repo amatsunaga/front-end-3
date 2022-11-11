@@ -26,7 +26,7 @@ export function Lesson05() {
     ]
   
     return (
-      <div className="quarta-aula-component">
+      <div className="quinta-aula-component">
 
         <h1 className="main-title">Componentes identificados</h1>
           

@@ -34,7 +34,6 @@ export function Lesson07Exercise() {
 
     function addNewProduct() {
 
-        // allProducts.push(newProduct)
         setAllProducts([...allProducts, newProduct])
 
     }
