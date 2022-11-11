@@ -1,7 +1,7 @@
 import "./style.scss"
 
-import { DHGame_wideCard } from "../../components/DHGame_wideCard"
-import { DHGame_squareCard } from "../../components/DHGame_squareCard"
+import { DHGameWideCard } from "../../components/DHGameWideCard"
+import { DHGameSquareCard } from "../../components/DHGameSquareCard"
 
 export function DHGames() {
 
@@ -124,9 +124,9 @@ const cheapGames = [
 
                 {
                     newGames.map((game, index) =>
-                        <DHGame_wideCard
-                            key={ index }
-                            item= { game }
+                        <DHGameWideCard
+                            key={index}
+                            item= {game}
                         />
                     )
                 }
@@ -136,14 +136,14 @@ const cheapGames = [
     
 
         <section className="halloween-games">
-            <h2 className="section-title">Halloween Games</h2>
-            <ul lassName="square-cards-list halloween-games-list">
+            <h2 className="section-title">Halloween Offers</h2>
+            <ul className="square-cards-list halloween-games-list">
 
                 {
                     halloweenGames.map((game, index) =>
-                        <DHGame_squareCard
-                            key={ index }
-                            item= { game }
+                        <DHGameSquareCard
+                            key={index}
+                            item= {game}
                         />
                     )
                 }
@@ -158,9 +158,9 @@ const cheapGames = [
 
                 {
                     earlyAccessGames.map((game, index) =>
-                        <DHGame_wideCard
-                            key={ index }
-                            item= { game }
+                        <DHGameWideCard
+                            key={index}
+                            item= {game}
                         />
                     )
                 }
@@ -175,9 +175,9 @@ const cheapGames = [
 
                 {
                     cheapGames.map((game, index) =>
-                        <DHGame_squareCard
-                            key={ index }
-                            item= { game }
+                        <DHGameSquareCard
+                            key={index}
+                            item= {game}
                         />
                     )
                 }

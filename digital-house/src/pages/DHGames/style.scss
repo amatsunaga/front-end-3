@@ -26,11 +26,15 @@
     gap: 12px;
   }
 
-  // .square-cards-list {
-  //   display: grid;
-  //   grid-template-areas:
-  //     'card1' 'card2'
-  //     'card3' 'card4'
-  //   ;
-  // }
+  .square-cards-list {
+    column-count: 2;
+    column-gap: 24px;
+    // row-gap: 24px;
+    
+    // display: grid;
+    // grid-template-areas:
+    //   'card1' 'card2'
+    //   'card3' 'card4'
+    // ;
+  }
 }
