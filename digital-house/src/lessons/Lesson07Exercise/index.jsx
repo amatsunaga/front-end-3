@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { useParams } from "react-router-dom";
 import './style.scss'
 import { Lesson07ProductCard } from '../../components/Lesson07ProductCard'
 
 export function Lesson07Exercise() {
+
+    // const { id } = useParams()
 
     const [allProducts, setAllProducts] = useState([
         {

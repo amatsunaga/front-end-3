@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { Lesson15Item } from "../../components/Lesson15Item";
 
@@ -11,6 +11,8 @@ export function Lesson15() {
   const [locations, setLocations] = useState([])
   const [count, setCount] = useState(0)
   const [formError, setFormError] = useState(false)
+
+  // const { id } = useParams()
 
   function searchCep(event, cepReceived) {
     event.preventDefault()
@@ -82,10 +84,11 @@ export function Lesson15() {
             type="number"
             id="cep"
             value={cep} 
+            aria-label="cep"
             onChange={event => setCep(event.target.value)} />
         </div>
 
-        <button className="register-button" onClick={event => searchCep(event, cep)}>Cadastrar</button>
+        <button className="register-button" aria-label="submit-button" onClick={event => searchCep(event, cep)}>Cadastrar</button>
 
       </form>
 
@@ -106,11 +109,12 @@ export function Lesson15() {
 
       </section>
 
-      <Link to="/decima-quarta-aula">
+      {/* <Link to="/decima-quarta-aula">
         <button>Aula anterior</button>
-      </Link>
+      </Link> */}
 
     </div>
   )
 }
 
+// Arquivo de teste: Lesson15.test.jsx ou Lesson15.spec.jsx

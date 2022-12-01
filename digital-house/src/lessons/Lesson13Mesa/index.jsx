@@ -4,6 +4,8 @@ import { Lesson13MesaListItem } from "../../components/Lesson13MesaListItem"
 import "./style.scss"
 
 export function Lesson13Mesa() {
+  // const { id } = useParams()
+
   const [items, setItems] = useState([
     "Pizza de Calabresa", "Coca-Cola 600mL", "Pudim"
   ])
